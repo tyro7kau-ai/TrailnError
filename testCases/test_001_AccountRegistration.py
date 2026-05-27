@@ -1,7 +1,6 @@
 import time
 
 import pytest
-import self
 
 from pageObjects.HomePage import HomePage
 from pageObjects.AccountRegistrationPage import AccountRegistrationPage
