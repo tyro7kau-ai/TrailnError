@@ -1,5 +1,6 @@
 import time
 
+import pytest
 import self
 
 from pageObjects.HomePage import HomePage
@@ -10,7 +11,7 @@ from utilities import randomeString
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
-
+@pytest.mark.sanity
 class Test_001_AccountReg:
     baseURL = ReadConfig.getApplicationURL()
     email = ReadConfig.getUseremail()
